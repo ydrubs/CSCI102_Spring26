@@ -1,14 +1,28 @@
 ### Slide 5 - Simple Hello World Program
-
-# ALOt of cool code
-
-
+# greeting = "Good morning!"
+# print(greeting)
+#
+# print(id(greeting)) # Where does var live in memory
 
 ###Slide 15 - Data types
+hello = "hello" # String
+print(type(hello))
 
+a = 67 # int
+print(type(a))
 
+b = 1.0
+print(type(b))
 
+c = True
+print(type(c))
 
+d = "5"
+print(type(d))
+print(d)
+
+f = int(d) # converts the string '5' to an integer 5
+print(type(f))
 
 
 ###Slide 17 - Getting Input
