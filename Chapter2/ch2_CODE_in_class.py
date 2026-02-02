@@ -6,7 +6,7 @@ This is code we did in class
 ##Slide 2 - Example of comments and docstrings
 
 # --- demo of an in-line comment
-# age = 115 # age of the oldest ever living person
+age = 115 # age of the oldest ever living person
 
 
 """Sometimes there is a need to explain or document a portrion of code beyond one line.
@@ -14,60 +14,69 @@ For this we can use a docstring to extend to multiple lines.
 Docstrings are also used to attribute programs and explain functions."""
 
 # --- Slide 4 - code literals - how data types are represented to the programming language
-
-
-
+# a = 4
+# b = '4'
+# print(a,b)
+# print(a + a, b + b, str(a) + str(int(b)))
 
 
 ##Slide 5 - place value representation
-
-
-
+# liams_number = 84,000
+# print(liams_number)
+#
+# print(1,234) # This prints two separate pieces of data
+#
+# liams_number_part2 = 848_120_000
+# print(liams_number_part2)
 
 
 
 ##Slide 7 - String literals
-pass # use double quotes of a single quote is part of the string
+# print("that's") # use double quotes of a single quote is part of the string
 
 # --  Often the choice of single or double quote does not matter
 # print("A double quoted string")
 # print('does the same thing as a single quoted string')
 
 # -- Perhaps an exception
-# print("However, there'll be times when a string needs to include a single quote within it, so a double quote is useful.")
+# print('However, there\'ll be times when a string needs to include a single quote within it, so a double quote is useful')
 
 
 ## Multiline strings look similar to docstrings
 # welcomeText = '''Welcome to my game!
+#
 # I will think of a number from 1 to 100, and you must try
 # to guess it. I'll tell you if your guess is too small
 # or too large.
-
-# Enter an integer between 1 and 100 when prompted.'''
-
-
+#
+#
+#         # Enter an integer between 1 and 100 when prompted.'''
+#
+#
 # print(welcomeText)
 
 
 ##Slide 8 - Escape characters
 # print('Hello. How are you?')
-#
+# #
 # print("1. hello " + 'there') #Substitute one of the escape chars for the '#'
-# print("2. hello# " + ' there')
-# print("3. hello# " + ' there')
-# print("4. hello# " + ' there')
-# print("5. hello# " + ' there')
-# print("6. hello#' " + ' there')
-# print("7.hello# " + ' there')
+# print("2. hello\b " + ' there')
+# print("3. hello\n " + '  there')
+# print("4. hello\t " + ' there')
+# print("5. hello\\" + ' there')
+# print("6. hello\'"" " + ' there')
+# print("7.hello\"" + ' there')
 
 
 
 
 ##Slide 10 - End of line arguments
-# print("Hello")
+# print("Hello")# Drops to new line
 # print("there")
-
-
+#
+# seperator = ' --#-- '
+# print('hello', end = seperator)
+# print('there')
 
 
 
@@ -76,12 +85,15 @@ pass # use double quotes of a single quote is part of the string
 # name = 'Yoda'
 # age = 900
 # home_planet = 'Dagobah'
-
-## using sep
-
-
-##  combine sep and end
-
+#
+# ## using sep
+# print(name, age, home_planet)
+# print(name, age, home_planet, sep = ', ')
+# print(name, age, home_planet, sep = ' *** ')
+#
+# ##  combine sep and end
+# print(name, age, home_planet, sep=", ", end=' :) ')
+# print("The End")
 
 ###Activity from slide 13
 ## Three valid Variables
