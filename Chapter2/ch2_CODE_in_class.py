@@ -172,14 +172,14 @@ car_type = 'Sedan'
 
 
 ##Slide 18 - Examples of math operations
-print(4 ** 2)  #Exponents
-print(9//10) # QUOTIENT - Always drops decimal
-print(9 % 2) # Modulus (mod) - Remainder
-
-print(15 % 4) # 3
-
-print(2**2**3) # NOT 32
-print(4**3)
+# print(4 ** 2)  #Exponents
+# print(9//10) # QUOTIENT - Always drops decimal
+# print(9 % 2) # Modulus (mod) - Remainder
+#
+# print(15 % 4) # 3
+#
+# print(2**2**3) # NOT 32
+# print(4**3)
 
 
 # a = 1
@@ -189,56 +189,61 @@ pass # Increment and reassign to itself
 
 
 ## Slide 20 Mixed-Mode Arithmetic
-# a = 6
-# b = 3
-pass
-pass # True division Results in a float
-pass # Quotient Division rounds down to an int
+a = 6
+b = 3
+print(a/b) # True division Results in a float
+print(a//b) # Quotient Division rounds down to an int
 
 
-# c = 0.7
-pass # Addition using at least one float always results in a float
+c = 0.7
+d = 0.3
+print(c + d) # Addition using at least one float always results in a float
+
+f = str(33)
+print(f + str(1))
 
 
-
-
-
-#Slide 22 - recasting review
-a = '33'
-b = 5
-c = 4.0
-d = 'one'
-
-pass # int to float
-pass # float to str
-pass # str to int
-pass # str to int - ERROR
 
 
 ## SLide 23 rounding floats
-
-
+# g = 3.4415926
+#
+# g1 = round(g, 0)
+# print(g1)
+#
+# g2 = round(g, 1)
+# print(g2)
+#
+# g3 = round(g, 2)
+# print('$' + str(g3))
+#
 
 
 
 ##Slide 24 - Character operations
-# s1 = "Mary"
-# s2 = "Freddy"
+s1 = "Mary"
+s2 = "Freddy"
 
-pass #Get the lenght of string s1 and s2
-pass # Get the ASCII code of the character
-pass #Get the character from the ASCII code
-pass #Find the smallest and largest ASCII character of s2
+print(len(s1)) #Get the lenght of string s1 and s2
 
+print(ord("M")) # Get the ASCII code of the character
 
-##Playing around with some character codes in unicode
-# print(chr(0x265e))
-# print(chr(0x250C))
-# print(chr(203850))
-# print(int(0x265e))
-# print(chr(9822))
+# IMPORTANT SKILLS
+# print(chr(67)) #Get the character from the ASCII code
+# print(chr(67+1)) # The letter D
+# print(ord(chr(67+1)))
+
+# lower_to_upper = chr(int(ord('a')-32))
+# print(lower_to_upper)
+
+## Playing around with some character codes in unicode
+print(chr(0x265e))
+print(chr(0x250C))
+print(chr(203850))
+print(int(0x265e))
+print(chr(9822))
 
 # print('The ASCII code for the letter \'a\' is ' + str(ord('a')))
 
-# for i in range (9000, 10000):
-#     print(chr((i)), end = ', ')
+for i in range (100000):
+    print(chr((i)), end = '\n ')
