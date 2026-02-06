@@ -14,4 +14,7 @@ Do the following:
         - The result would output 'f'
 
     See Canvas for more examples
+
+    Hint: Remember you need to convert a character to its ASCII value to do the math,
+      ...then convert the value back into the character for output.
 """
