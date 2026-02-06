@@ -95,64 +95,91 @@ Docstrings are also used to attribute programs and explain functions."""
 # print(name, age, home_planet, sep=", ", end=' :) ')
 # print("The End")
 
+## Acvivity - sep and end
+# Add to the command below in order to have each color appear on a seperate line
+# print('red', 'green', 'blue', sep='\n')
+
+
+# Reformat the following to have them show up on the same line seperated by a '%' character
+# print('red', end='%')
+# print('blue', end='%')
+# print('green')
+
+this_is_my_super_freindly_greeting_to_you = 'hello'
+
+carType = 'Sedan'
+
+car_type = 'Sedan'
+
+
 ###Activity from slide 13
 ## Three valid Variables
-
+# HITHERE = 'Hello'
+# hiThere = 'Hello'
+# hi_th0re = 'Hello'
+# hi_there = 'hello' # most conventional
 
 ## Three Invalid variables
-
+# 1hi_there = 'hello'
+# if = 'hello'
+# hi! = 'Hello'
 
 
 ##Slide 14 - variable assignment through concatenation
 # first_name = "Obi-Wan"
 # last_name = "Kenobi"
-
-
+#
+# print(f"Hi I am {first_name} {last_name}")
+#
+# full_name = first_name + ' ' + last_name
+# print(f"Hi I am {full_name}")
 
 
 ## Reassigning Variables to new values
 # x = 125
-pass    # y defined in terms of x
+# y = x / 5   # y defined in terms of x
+# print(x,y)
 
 
-pass   # redefining x
+# x = 100   # redefining x
+# print(x, y)
 
 
 
-pass   # redefining y by modifying
-
+# y = 2 * y   # redefining y by modifying
+# print(x, y)
 
 
 ##Slide 15 - Review Concatenation vs. comma seperation
 # first_name = "Yuriy"
 # last_name = "Drubinskiy"
-
-pass # Concatenation
-pass # comma seperated arguments
+#
+# print(first_name + last_name) # Concatenation results in ONE SINGLE string
+# print(first_name, last_name) # comma seperated arguments - two different pieces of data
 
 
 ## Slide 16 - The * string operation
-s1 = 'waaz'
-s2 = 'a'
-s3 = 'p'
-
-
-
+# s1 = 'waaz'
+# s2 = 'a'
+# s3 = 'p'
+#
+# print('hello ' * 5)
+# print((s1 + s2*10 + s3) * 3)
 
 
 ### ACTIVITY slide 17 - Write a print statement that outputs the string seen in slide 17 of the powerpoint
-
+# print(('^' * 10 + '\n') + (('#' * 10 + '\n')*3) + ('^' * 10 + '\n'))
 
 
 ##Slide 18 - Examples of math operations
-pass #Exponents
-pass # QUOTIENT
-pass # Modulus (mod)
-pass
+print(4 ** 2)  #Exponents
+print(9//10) # QUOTIENT - Always drops decimal
+print(9 % 2) # Modulus (mod) - Remainder
 
-pass
-pass
+print(15 % 4) # 3
 
+print(2**2**3) # NOT 32
+print(4**3)
 
 
 # a = 1
