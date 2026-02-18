@@ -1,33 +1,60 @@
 ##Slide 5 - One way selection statement
-
-
-
-
+# name = input("Enter you name, please: ")
+# if name == 'admin':
+#     print("Access granted")
+#
+# print("Hello eveyone")
 
 
 #Slide 6 - If/else statement
-
+# name = input("Enter you name, please: ")
+# if name == 'admin' or name == 'Liam':
+#     print("Access granted")
+#
+# else:
+#     print("Wrong credentials")
+#
+# print("Hello eveyone")
 
 
 
 
 
 ##Slide 7: Multi-way selection
-# number = int(input('Enter the numeric grade: '))
+number = int(input('Enter the numeric grade: '))
+
+# if number > 89:
+#     print("Good job!")
+#     letter = 'A'
+# elif number > 79:
+#     print("Pretty good")
+#     letter = 'B'
+# elif number > 69:
+#     print("Ok")
+#     letter = 'C'
+# else:
+#     letter ='F'
+#
+# print(f'Your letter grade is {letter}')
+
+# if number > 89:
+#     print("Good job!")
+#     letter = 'A'
+# elif number > 79:
+#     print("Pretty good")
+#     letter = 'B'
+# elif number > 69:
+#     print("Ok")
+#     letter = 'C'
+# else:
+#     letter ='F'
+#
+# print(f'Your letter grade is {letter}')
 
 
 
 
-
-## Combining logic with a conditional
-# print("What color is the traffic light?")
-# trafficLight = input("(r)ed, (y)ellow, or (g)reen: ")
-
-
-
-
-
-##Slide 8 ACTIVITY
+## Slide 8 ACTIVITY
 
 
 
