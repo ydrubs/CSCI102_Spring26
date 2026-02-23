@@ -21,7 +21,7 @@
 
 
 ##Slide 7: Multi-way selection
-number = int(input('Enter the numeric grade: '))
+# number = int(input('Enter the numeric grade: '))
 
 # if number > 89:
 #     print("Good job!")
@@ -63,14 +63,21 @@ number = int(input('Enter the numeric grade: '))
 # y = 5
 # z = 2
 
-
+# print(x == y) # FALSE
+# print(x == y + 5) # TRUE
+# print(y != z) # TRUE
+# print(x < 5) # FALSE
+#
 
 
 
 ##Slide 11
 # a = True
 # b = False
-
+#
+# print(a and b) # FALSE
+# print (a or b) # TRUE
+# print (not a) # FALSE
 
 
 
@@ -78,16 +85,23 @@ number = int(input('Enter the numeric grade: '))
 # #Write your own challening logic statement, make it as long as you want
 # print(a and not b or b and not a or (a and not b)) # True
 
-
+# --- SKIP
 
 
 
 
 ##slide 12 - Evaluating Logic statements
-
-
-
-
+# grade = float(input("Enter your grade: "))
+#
+# if grade >=90 and grade < 101:
+#     print("Nice job!")
+# elif grade < 90 and grade >=80:
+#     print("not bad")
+# else:
+#     print("Unacceptable!")
+#
+# if grade > 90 and grade < 70:
+#     print("You're on the edge of a bell curve")
 
 
 ## Slide 13 Activity
