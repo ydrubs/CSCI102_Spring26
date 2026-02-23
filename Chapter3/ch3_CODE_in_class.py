@@ -105,24 +105,64 @@
 
 
 ## Slide 13 Activity
+# valid_username = 'user123'
+# is_active = False
+# user = input("Enter your username, please: ")
 
-
-
+# if user == valid_username and is_active:
+#     print("access granted")
+# elif user == valid_username and not is_active:
+#     print("access denied")
+# else:
+#     print("No user found")
 
 
 ##Slide 16 - using a for loop
+# passes = 10
+# message = 'Hello'
 
+# for eachPass in range(5):
+#     print(message)
 
+# i = 'sup'
+# for i in range(100):
+#     print(i, message)
+#
+# print(i, type(i))
 
 
 ## using a conditional in a for loop
-
-
+# name = 'Bob'
+#
+# for i in range(5):
+#     user = input("Enter your name: ")
+#     if name == user:
+#         print("Welcome")
+#     else:
+#         print("Go away!")
 
 
 ##Slide 18  - Looping through an algorithm
+number = 1
 
+# THIS IS SILLY AND INEFFICIANT
+# number = number + 3
+# print(number)
+# number = number + 3
+# print(number)
+# number = number + 3
+# print(number)
+# number = number + 3
+# print(number)
+# number = number + 3
+# print(number)
 
+# passes = 10
+# for i in range(passes):
+#     print(number)
+#     number = number + 3
+#
+# print(number)
 
 
 
