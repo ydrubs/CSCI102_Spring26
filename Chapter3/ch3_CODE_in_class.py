@@ -169,18 +169,35 @@ number = 1
 
 
 ##Slide 19 - Another example
+# total = 1
+# product = 5
+# number_of_loops = 50
 
-
+# for i in range(number_of_loops):
+#     print(total)
+#     total = total * product
+# print(total)
+#
 
 
 
 ##Slide 20 - Using the loop counter in the loop
-
-
-
+# for i in range(11):
+#     i = i * 2
+#     print(i)
+#
+#
+# for i in range(11):
+#     i = i ** 2
+#     print(i)
 
 ##Equivelant to the following but twice as long
-
+# count = 0
+#
+# for i in range(11):
+#     print(count)
+#     count = (count + 1) ** 2
+# print(count)
 
 
 
@@ -193,47 +210,79 @@ Write a for loop that counts 20 ‘Mississippis’, such as -
 ...
 20 Mississippi
 """""
+# for i in range(20):
+#     print(i + 1, 'Mississippi')
+#
+# iterations = 20
+# for i in range(iterations + 1):
+#     print(i, 'Mississippi')
 
 
 
 
 
 ##Slide22 - Controlling the loop range
-
-
-
-
+# for i in range(1,21): # Now i STARTS at 1
+#     print(i)
 
 
 ##SLide 23 - Controlling the loop range; counting by...
 ## Count by threes
-
+# for i in range(1,101,3):
+#     print(i)
 
 
 
 ## Count backwards from 100
-
-
-
+# for i in range(100, 0, -1):
+#     print(i)
+#
 
 ##Slide 24 - Augmented Assignment
+a = 5
+b = 7
 
+# a = a + b
+# print(a)
 
+a += b # Augmented assignment is the more conventional way to reassign variables
+# print(a)
 
-
+a -= b
+a *= b
+a %=b
 
 
 
 ### FIZZ BUZZ Exercise (in-class)
+# for i in range(1,101):
+#
+#     if i % 3 == 0 and i % 5 == 0:
+#         print("FizzBuzz")
+#
+#     elif i % 3 == 0:
+#         print("Fizz")
+#
+#     elif i % 5 == 0:
+#         print("Buzz")
+#
+#     else:
+#         print(i)
 
+## EXTRA - Looping over elements of a data set rather then a range
+name = input("Enter your name, please: ")
+greeting = f"Hello {name}, how is your day?"
 
+string_length = len(greeting)
+print(string_length)
 
+# --- Loop using a counter
+# for i in range(string_length):
+#     print(greeting[i])
 
-
-
-
-
-
+# --- Looping over a letter
+# for letter in greeting:
+#     print(letter)
 
 ##Slide 27 - The while Loop
 """ Ask for a number and add until you hit 1000 """
