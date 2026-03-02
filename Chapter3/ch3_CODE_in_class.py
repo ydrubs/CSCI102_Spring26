@@ -270,11 +270,11 @@ a %=b
 #         print(i)
 
 ## EXTRA - Looping over elements of a data set rather then a range
-name = input("Enter your name, please: ")
-greeting = f"Hello {name}, how is your day?"
-
-string_length = len(greeting)
-print(string_length)
+# name = input("Enter your name, please: ")
+# greeting = f"Hello {name}, how is your day?"
+#
+# string_length = len(greeting)
+# print(string_length)
 
 # --- Loop using a counter
 # for i in range(string_length):
@@ -284,30 +284,55 @@ print(string_length)
 # for letter in greeting:
 #     print(letter)
 
+## CANNONBALL PROBLEM IN-CLASS
+# rows = int(input('Enter the number of rows to stack: '))
+# total = 0
+
+# for i in range(1,rows+1):
+#     # print(i)
+#     total = total + i**2
+#     # print(total)
+# print(total)
+
+
+# rows = 1
+# total = 0
+# while total < 600000:
+#     total += rows **2
+#     # rows = rows + 1
+#     rows +=1
+#     # print(total)
+# print(rows)
+
 ##Slide 27 - The while Loop
 """ Ask for a number and add until you hit 1000 """
+# total = 0
 
-
-pass # while loop is an entry-controlled loop
-
-
-
+# while total < 1000: # while loop is an entry-controlled loop
+    # n = float(input("Please enter a number: "))
+    # total +=n # same as total = total + n
+    # print(total)
 
 
 ##slide 29 ACTIVITY
-
-
-
-
-
+# total = 1
+# step = float(input("How much do you want to count by: "))
+#
+# print(total)
+# while total < 1000:
+#     total += step
+#     print(round(total, 1))
+#
 
 ##Slide 30 - While Loop for entering data
 # theSum = 0.0
 # data = input('Enter a number or just enter to quit: ')
-
-pass # Loop triggers if a string is not empty
-
-
+#
+# while data !='':  # Loop triggers if a string is not empty
+#     number = float(data)
+#     theSum += number
+#     print('The sum is', theSum)
+#     data = input('Enter a number or just enter to quit: ')
 
 
 ##Slide 31 - Breaking a loop
