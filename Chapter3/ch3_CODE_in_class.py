@@ -335,25 +335,59 @@ a %=b
 #     data = input('Enter a number or just enter to quit: ')
 
 
+## While loop in-class practice
+# count = 0
+# ask = 0
+#
+# while (ask != 'Y' and ask != 'N' and count < 5):
+#     count +=1
+#     ask = input('(Y)ay or (N)ay bro: ')
+
+
 ##Slide 31 - Breaking a loop
+total = 0
 
-
-
-
+# while True:
+#     data = input("Enter a number: ")
+#     if data == '':
+#         break
+#
+#     else:
+#         data = float(data)
+#         total += data
+#         print(f'The total is currently: {total}')
 
 
 ##Slide 33 - While loop to validate data
 
-pass # Runs forever (until break)
+# while True: # Runs forever (until break)
+#     number = int(input("Enter a number: "))
+#
+#     if number >=0 and number <=100:
+#         print("Number accepted")
+#         break
+#
+#     else:
+#         print(f"Number NOT accepted, you entered {number}, but it must be 0 to 100.")
 
 
 
 
 ## Slide 34 - The While and the Boolean flag
+done = False
 
-
-
-
+# while not done:
+#     number = int(input("Enter a number: "))
+#     if number >=0 and number <=100:
+#         print("Number accepted")
+#         done = True
+#
+#     else:
+#         print("Not a valid number")
+#         if number < 50: #NESTED
+#             print("Less then 50")
+#         else:
+#             print("Greater then 50")
 
 ## Slide 35 - Common while loop logic errors
 ##  Fail to break loop
@@ -362,7 +396,7 @@ pass # Runs forever (until break)
 #     number = int(input('Enter the numeric grade: '))
 #     if number >= 0 and number <= 100:
 #         print(number)
-#         # NEED TO ADD 'break'
+# #         # NEED TO ADD 'break'
 #
 #     else:
 #         print('Error: grade must be between 100 and 0')
@@ -371,20 +405,26 @@ pass # Runs forever (until break)
 ################infinite Loop, not updating variable
 # a = 0
 # count = 0
+#
 # while a < 1000:
 #     count += 1
 #     print(a, count)
+#     a += 5
 
 ###############Did not test for a = 500 condition
 # a = 0
-#
+# #
 # while a < 1000:
 #     a +=1
+#
 #     if a < 500:
 #         print("Boom", a)
 #     if a > 500:
 #         print('Pow', a)
-    ###Doesn't test a = 500
+#     ###Doesn't test a = 500
+#     # --- POSSIBLE FIX
+#     if a == 500:
+#         print('Yay 500')
 
 
 ##Slide 36 - Importing Modules -> Random

@@ -22,7 +22,7 @@ Write a program that asks the user to enter a password.
         Please enter a valid password: Password123
         Incorrect password, please try again.
 
-        Please enter a valid password: I dont know
+        Please enter a valid password: I don't know
         Incorrect password, please try again.
 
         Are you sure you are not a robot (y or n): n
