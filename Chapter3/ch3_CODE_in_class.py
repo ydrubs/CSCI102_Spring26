@@ -428,22 +428,36 @@ done = False
 
 
 ##Slide 36 - Importing Modules -> Random
+# import random
 
+# n = random.random() # Generates random number between 0 and 1
+# print(n)
+#
+# number = random.randint(1,100)
+# print(number)
+#
+# for i in range(10):
+#     my_number = random.randint(1,6)
+#     print(my_number)
 
+# from random import randint # Don't have to reference random this way
+# print(randint(1,10)) # No need to do random.randint()
 
+## In-class coin flip activity
+from random import randint
 
-pass # Don't have to reference random this way
+flip_count = 0
+head_count = 0
 
+heads_in_a_row = 20
 
+while head_count < heads_in_a_row:
+    flip_count +=1
+    flip = randint(0,1) # 0 is HEADS 1 is TAILS
+    # print(flip)
+    if flip == 0:
+        head_count +=1
+    else:
+        head_count = 0
 
-
-
-
-##Slide 37
-##Dice rolling simulator - generate 10 random numbers between 1 and 6
-
-
-
-
-
-## Guess the number game
+print(f'It took you {flip_count} flips to get {heads_in_a_row} heads in a row.')
