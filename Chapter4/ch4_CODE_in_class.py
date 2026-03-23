@@ -1,83 +1,100 @@
 # #Slide 3 - String from characters demo
-
-
-pass #Iterate through the individual characters
+# string = "How are you today"
+# for char in string:
+#     print(char)
 
 
 ## This will give an ERROR because an integer is not ITERABLE
-
-
+# n = 123
+# for digit in n:
+#     print(digit)
 
 
 #Slide 4 - exploring string indexes
 name = 'Skywalker'
-pass #The first letter is 'S'
-
-
-pass #Results in an index error because last index is at [8]
-pass # Also an error because len(name) looks at index 9 as well
-
-
-pass # last character is 'r'
-pass #  Second to last character is 'e'
-
+# print(name[0]) #The first letter is 'S'
+# print(name[6])
+#
+# print(len(name))
+#
+# # print(name[9]) #Results in an index error because last index is at [8]
+# print(name[8]) # The last letter
+# print(name[len(name) - 1]) # ALSO the last letter
+#
+# print(name[-1]) # last character is 'r'
+# print(name[-2]) #  Second to last character is 'e'
 
 
 ##Slide 5
-data = 'Hi there!'
-
+data = 'Hi there, how are you!'
 ## Loop Through the indexes of the string (these are numbers)
-
-
-
+# for char in range(len(data)):
+    # print(char) # Displays the loop count
+    # print(data[char]) # Display the letter at the index
 
 ## Loop through the elements of the string
-
-
+# for char in data:
+#     print(char) # Displays the charcter from the string
 
 
 ### YOUR TURN
-
-
-
+# song = 'Harmony Hall'
+# print(song[1])
+# print(len(song))
+#
+# for i in range(len(song)):
+#     print(song[i], end = ':)')
+#
+# for char in song:
+#     print(char)
+#
+# print(song.upper()) # Makes everything
 
 
 ##Slide 7 - Mutable vs. Immutable Data
 # mutable = ['G', 'O', 'O', 'D']
+# print(mutable[0])
+# mutable[0] = 'H'
+# print(mutable)
+
 
 
 
 # immutable = 'Good'
-
-
+# print(immutable[0]) # First letter G
+# # immutable[0] = 'H' # Can't change the 'G' to 'H'
+#
+# immutable = 'Hood' # This is okay
 
 
 
 ##Slide 9 - string slicing
 name = 'myfile.txt'
-pass # full string
-pass # Only the first character
-pass # First two characters
-pass # Character 2 to 5
-pass # This is the same as name[0:2]
+# print(name[0:]) # full string
+# print(name[0:1]) # Only the first character
+# print(name[0:2]) # First two characters
+# print(name[2:6]) # Character 2 to 5
+# print(name[:2]) # This is the same as name[0:2]
 
-pass # Start at third to last and go to last
-pass # Start at the beginning and go every other letter
+# print(name[-3:-1]) # Start at third to last and go to last
+# print(name[0::2]) # Start at the beginning and go every other letter
 
 
-pass #ERROR
-pass # This is okay
-pass # Last three characters combined with the character 2 to 5
+# print(name[100]) #ERROR
+# print(name[0:100]) # This is okay
+# print(name[-3:-1] + name[2:5]) # Last three characters combined with the character 2 to 5
+
 
 
 ##Slide 9 - Try to run your own experiments with the string below
-# my_string = "Give a man a program, frustrate him for a day. " \
-#             "Teach a man to program, frustrate him for a lifetime."
+my_string = "Give a man a program, frustrate him for a day. " \
+            "Teach a man to program, frustrate him for a lifetime."
 
 
 
 ##Slide 10 - Your turn - Move Two Letters
-
+message = input("Please enter a word: ")
+print(message[-2:] + message[:-2])
 
 
 
