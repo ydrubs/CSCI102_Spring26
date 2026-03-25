@@ -93,29 +93,59 @@ my_string = "Give a man a program, frustrate him for a day. " \
 
 
 ##Slide 10 - Your turn - Move Two Letters
-message = input("Please enter a word: ")
-print(message[-2:] + message[:-2])
+# message = input("Please enter a word: ")
+# print(message[-2:] + message[:-2])
 
 
 
 ##Slide 11 - String Methods
-superhero = 'incredible HULK'
+# superhero = 'incredible HULK'
+# all_upper = superhero.upper()
+# print(all_upper)
+#
+# print(superhero.lower())
+#
+# print("how is your day today".title())
+# print(superhero.casefold()) # Ignores case sensitivity
+# print(superhero.split())
 
 
 
-
-##Slide 12 - More Strng Methods
-address = '123 Fake St.'
+##Slide 12 - More String Methods
+address = '123 Fake St'
+greeting = 'hello'
+#
+# print(address.islower()) # False beause not all character are lowercase
+# print(greeting.islower()) # True
+#
+# print(address.isalnum()) # False
+# print(address.isascii()) # True
 
 # Check which characters are digits
 # for char in address:
+#     print(char, char.isdigit())
+
+
+# for char in address:
+#     print(char, char.islower())
 
 
 # for char in address:
 
 
-# for char in address:
+## IN_CLASS PRACTICE
+message = input("Please enter a string: ")
+lower_case_count = 0
+only_uppercase = ""
 
+for char in message:
+    if char.islower():
+        lower_case_count +=1
+    if char.isupper():
+        only_uppercase = only_uppercase + char
+
+print(f"There are {lower_case_count} lower case letters")
+print(only_uppercase)
 
 ##Slide 13 . Even more string methods
 ##Map a directory of files by using the split command
@@ -131,6 +161,8 @@ pass # Combining back into a single string
 # greeting = 'hello'
 # print(dir(greeting)) # A list of available methods for the 'string' object
 # print(help(str)) # A more detailed description of each available method
+
+
 
 
 ##Slide 15 - Testing string logic with 'in'
