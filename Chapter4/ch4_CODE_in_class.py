@@ -69,7 +69,7 @@ data = 'Hi there, how are you!'
 
 
 ##Slide 9 - string slicing
-name = 'myfile.txt'
+# name = 'myfile.txt'
 # print(name[0:]) # full string
 # print(name[0:1]) # Only the first character
 # print(name[0:2]) # First two characters
@@ -87,8 +87,8 @@ name = 'myfile.txt'
 
 
 ##Slide 9 - Try to run your own experiments with the string below
-my_string = "Give a man a program, frustrate him for a day. " \
-            "Teach a man to program, frustrate him for a lifetime."
+# my_string = "Give a man a program, frustrate him for a day. " \
+#             "Teach a man to program, frustrate him for a lifetime."
 
 
 
@@ -112,8 +112,8 @@ my_string = "Give a man a program, frustrate him for a day. " \
 
 
 ##Slide 12 - More String Methods
-address = '123 Fake St'
-greeting = 'hello'
+# address = '123 Fake St'
+# greeting = 'hello'
 #
 # print(address.islower()) # False beause not all character are lowercase
 # print(greeting.islower()) # True
@@ -134,26 +134,19 @@ greeting = 'hello'
 
 
 ## IN_CLASS PRACTICE
-message = input("Please enter a string: ")
-lower_case_count = 0
-only_uppercase = ""
+# message = input("Please enter a string: ")
+# lower_case_count = 0
+# only_uppercase = ""
+#
+# for char in message:
+#     if char.islower():
+#         lower_case_count +=1
+#     if char.isupper():
+#         only_uppercase = only_uppercase + char
+#
+# print(f"There are {lower_case_count} lower case letters")
+# print(only_uppercase)
 
-for char in message:
-    if char.islower():
-        lower_case_count +=1
-    if char.isupper():
-        only_uppercase = only_uppercase + char
-
-print(f"There are {lower_case_count} lower case letters")
-print(only_uppercase)
-
-##Slide 13 . Even more string methods
-##Map a directory of files by using the split command
-# string = "C:\\Users\\yuriy.drubinskiy\OneDrive - Garden City Community College\\Python Class\\Powerpoints and notes"
-
-
-
-pass # Combining back into a single string
 
 
 ##Slide 13/14 - STRING METHODS SUMMARY
@@ -166,36 +159,54 @@ pass # Combining back into a single string
 
 
 ##Slide 15 - Testing string logic with 'in'
-# text = """A long time ago in a galaxy far far away..
-# It is a period of civil war.
-# Rebel spaceships, striking
-# from a hidden base, have won
-# their first victory against
-# the evil Galactic Empire."""
+text = """A long time ago in a galaxy far far away..
+It is a period of civil war.
+Rebel spaceships, striking
+from a hidden base, have won
+their first victory against
+the evil Galactic Empire."""
 #
-pass #True
-pass # False
-pass #TRUE because Ignores case-sensitivity in the string
+# print('hidden' in text)#True
+# print('empire' in text) # False
+# print('empire' in text.casefold()) #TRUE because Ignores case-sensitivity in the string
 
 
-pass # show all charaters from character 60 to character 69
-pass #Since war first appears at character 67, we can see what characters 60-69 are
 
+# print(text[60:70]) # show all charaters from character 60 to character 69
+# print(text.index('war')) # We can see the index of where the first character in the string appears
+# print(text.index('hello')) # Error if the search string is not there
 
 
 ##Slide 16
 ## The variable below defines a list data structure. We will lean more about this in chapter 5
 # fileList = ['myfile.txt', 'myprogram.exe', 'yourfile.txt', 'dont_open.txt']
+#
+# for file in fileList:
+#     if 'txt' in file:
+#         print(file)
 
 
 
+## Slide 18 using boolean flags
+# --- Check if a string has the letter A and a number in it
+while True: # Forever loop
+    my_string = input("Please enter a string: ")
 
-##Slide 17 - mini task; counting letters
+    has_A = False
+    has_number = False
 
+    if 'A' in my_string:
+        has_A = True
 
+    for char in my_string:
+        if char.isdigit():
+            has_number = True
 
-
-
+    if has_A and has_number:
+        print("The string is valid")
+        break
+    else:
+        print('String is invalid')
 
 
 #Slide 21 - Writing Text to a File
