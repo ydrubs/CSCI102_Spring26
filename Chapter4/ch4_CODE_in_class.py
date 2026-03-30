@@ -189,30 +189,38 @@ the evil Galactic Empire."""
 
 ## Slide 18 using boolean flags
 # --- Check if a string has the letter A and a number in it
-while True: # Forever loop
-    my_string = input("Please enter a string: ")
+# while True: # Forever loop
+#     my_string = input("Please enter a string: ")
+#
+#     has_A = False
+#     has_number = False
+#
+#     if 'A' in my_string:
+#         has_A = True
+#
+#     for char in my_string:
+#         if char.isdigit():
+#             has_number = True
+#
+#     if has_A and has_number:
+#         print("The string is valid")
+#         break
+#     else:
+#         print('String is invalid')
 
-    has_A = False
-    has_number = False
-
-    if 'A' in my_string:
-        has_A = True
-
-    for char in my_string:
-        if char.isdigit():
-            has_number = True
-
-    if has_A and has_number:
-        print("The string is valid")
-        break
-    else:
-        print('String is invalid')
 
 
 #Slide 21 - Writing Text to a File
+f = open("myfile.txt", 'w')
+f.write("1. Venus - 5,832 hours\n"
+        "2. Mercury - 1,408 hours\n"
+        "3. Mars - 24.6 hours \n"
+        "4. Earth 24 hours\n")
 
+f.close()
 
-
+f = open('myfile.txt', 'a') # Reopen and add data in 'append' mode
+f.write('5. Jupiter - 9.9 hours' + '\n')
 
 
 ## In class practice
@@ -225,20 +233,51 @@ Create a text file using Python.
 """
 
 
+
 #Slide 23 - Writing Numbers to a File
-
-
-
+# import random
+# f = open("integers.txt", 'w')
+#
+# for n in range(500):
+#     number = random.randint(1,500)
+#     f.write(str(number) + '\n')
+#
+# f.close()
 
 
 ##Slide 24 - Reading Text from a File
-
+# f = open('myfile.txt', 'r')
+# text = f.read()
+# print(text)
 
 
 ## Since the text file is broken up into lines, readline() adds an extra carrige return (\n)
 ## This is useful if you are searching for a specific line or need to take some action based on the contents of a line
-pass #As long as there's data to read, read it
-
+# f = open('myfile.txt', 'r')
+#
+# while True: #As long as there's data to read, read it
+#     line = f.readline()
+#     if 'venus' in line.casefold():
+#         print("Venus is cool")
+#     if line == '': # If line is blank
+#         break
+#
+#     print("Data: " + line)
 
 
 ##Slide 25 - Reading Numbers from a File
+my_file = open('integers.txt', 'r')
+print(type(my_file))
+
+sum = 0
+line_count = 0
+
+for line in my_file:
+    number = int(line)
+    # print(number) # print for debugging purposes
+    sum += number
+    line_count += 1 # How many lines have been read from the text file
+
+print(sum)
+print(sum/line_count) # Prints the average
+
