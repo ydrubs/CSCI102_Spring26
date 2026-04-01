@@ -1,21 +1,29 @@
 ##Slide 5 - Defining lists
 
-pass # Three element list
-pass # Lists can mix data types
-pass # Lists can contain other lists
-pass # Lists can be empty
+fruits = ['apples', 'oranges', 'cherries'] # Three element list
+profile = [24, 3.2, 'hello', True] # Lists can mix data types
+
+coordinates = [[-3,1], [0,3]] # Lists can contain other lists
+freinds = [] # Lists can be empty
 
 
-pass # lists have a length
-pass # Lists can be indexed
+# print(len(fruits)) # lists have a length
+# print(profile[1]) # Lists can be indexed
+# print(profile[4]) # ERROR because profile only has elements 0 to 3
 
-
-pass # Elements of sublists can be accessed from within a list
+# print(profile[-1]) # Last element
+# print(profile[len(profile)-1]) # Also does the same thing (with more effort)
+#
+# print(coordinates[0][0], coordinates[0][1]) # Elements of sublists can be accessed from within a list
 
 
 
 # --- Lists can store the result of other operation
-
+# import math
+# x= 2
+# lst = [x, x+2, math.sqrt(x), 'h' + 'i']
+#
+# print(lst)
 
 
 #Slide 6 - Your turn
@@ -23,30 +31,40 @@ pass # Elements of sublists can be accessed from within a list
 
 ##Slide 7
 # --- Iterable data types can be recast as lists
-
-
-
+my_numbers = range(100)
+my_numbers = list(my_numbers)
+#
+# print(my_numbers)
+# print(max(my_numbers)) # The biggst number in the list
+# print(min(my_numbers)) # The lowest number
+# print(sum(my_numbers))
 
 
 ## Build a list from a string
-
-
-
+# message = 'Hello how are you?'
+# message_lst = list(message)
+# print(message_lst)
+#
+#
 
 ## Other list operations
-pass # Check the number of elements in a list
-pass # Combine two list swith a '+' sign
-
-
+# print(len(message_lst)) # Check the number of elements in a list
+# letters = [1,2,3]
+# new_lst = message_lst + letters # Combine two list swith a '+' sign
+#
+# print(new_lst)
 
 
 #Slide 8
 ## This example allows you to add people to a roster by looping through the number of people that get added
-pass #Get input about number
-pass # Create an empty list to hold the people
+n_people = int(input("How many people do you want to add: ")) #Get input about number
+freinds = [] # Create an empty list to hold the people
 
-pass #Loop through however many people we said we wanted to add
+for i in range(n_people): #Loop through however many people we said we wanted to add
+    new_freind = input("Who do you want to add: ")
+    freinds.append(new_freind)
 
+print(freinds)
 
 
 
