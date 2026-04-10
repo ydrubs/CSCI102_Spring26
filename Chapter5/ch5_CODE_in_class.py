@@ -57,48 +57,64 @@ my_numbers = list(my_numbers)
 
 #Slide 8
 ## This example allows you to add people to a roster by looping through the number of people that get added
-n_people = int(input("How many people do you want to add: ")) #Get input about number
-freinds = [] # Create an empty list to hold the people
-
-for i in range(n_people): #Loop through however many people we said we wanted to add
-    new_freind = input("Who do you want to add: ")
-    freinds.append(new_freind)
-
-print(freinds)
+# n_people = int(input("How many people do you want to add: ")) #Get input about number
+# freinds = [] # Create an empty list to hold the people
+#
+# for i in range(n_people): #Loop through however many people we said we wanted to add
+#     new_freind = input("Who do you want to add: ")
+#     freinds.append(new_freind)
+#
+# print(freinds)
 
 
 
 
 ## This example generates n random numbers between 1 and 365 and puts them into a list
-
-
-
+# import random
+# number_lst = []
+# n = 21
+#
+# for i in range(n):
+#     number = random.randint(1,365)
+#     number_lst.append(number)
+#
+# print(number_lst)
+#
+#
 
 ## By converting to a 'set' data type we can see if there are any duplicates (like for the birthday problem)
-
+# number_set = set(number_lst)
+# print(number_set)
+# print(len(number_lst))
+# print(len(number_set))
 
 
 
 ##Slide 10 - Skill Review for exercise 5.1 - Stopping a loop when the 'enter' key is pressed.
+# while True:
+#     data = input("Enter some data: ")
+#     if data == '':
+#         break
 
-
+# l = [1.3, 5.5, 7.3] # some list of numbers
+# Find the sum of the list above
+# l_sum = sum(l)
+# print(l_sum)
 
 
 #Slide 12 - Different operations and list slicing techniques that are possible
-pass # first = [1,2,3,4]
-pass # returns second and third element as a new list (not the fourth)
-
+first = [1,2,3,4,5,6]
+# first_modified = first[2:4] # returns second and third element as a new list (not the fourth)
+# print(first_modified)
 
 
 
 ## Searching through a list
-# find an element in a list, TRUE
-# FALSE
-# TRUE
-# FALSE
+# print(1 in first)# find an element in a list, TRUE
+# print('1' in first)# FALSE
+# print(int('1') in first) # TRUE
 
-
-## Equality vs equivalency of data:
+## SKIP FOR NOW Equality vs equivalency of data:
 # second = list(range(1,5))
 # print(second)
 
@@ -112,43 +128,55 @@ pass #False because not the same place in memory
 
 
 ## Application: Searching through names in a database
-import random
-
+# import random
+#
 names = ["Cenard Bennett", "Javier Bustillos", "Antonio Cruz", "Jezter Fernandez", "Keagan Harms",
          "Kemish Hernandez", "Aaron Martinez", "Troy McMullin", "William Miller", "Alfredo Ramirez",
          "Austin Randle", "Brysan Sprowls", "Tradon Valdez"
          ]
-
-pass # Choose a random student
-
+#
+# random_student = random.choice(names) # Choose a random student
+# print(random_student)
+#
+# print('Bob' in names) # False
+#
+# print(f'{random.randint(-10,10)} Fake extra credit point goes to {random_student}')
 
 
 ##Slide 13 - Changing elements in a list
 # first = [1,2,3,4]
-
-
+# first[0] = 10
+# first[3] = 67
+# # first[4] = 'Erorr' # ERROR
+# print(first)
+#
+# names[0] = "George Washington"
+# print(names)
 
 
 ##Slide 14 - Manipulating through looping
-# numbers = [2,3,4,5]
-# Looping using the index of the list
-
-
+numbers = [2,3,4,5]
+for i in range(len(numbers)): # Looping using the index of the list
+    numbers[i] = numbers[i] ** 2
+print(numbers)
 
 
 # Looping using the elements of the list to build a new list
-
+# new_list = []
+# for n in numbers:
+#     new_list.append(n**2)
+# print(new_list)
 
 
 ## Loop in order to manipulate each string element
-pass # sentence = "Python is a good beginner programming language"
-pass # Split into individual words and make a list
+sentence = "Python is a good beginner programming language"
+sentence = sentence.split() # Split into individual words and make a list
+print(sentence)
+print(len(sentence))
 
-
-
-pass #Loop through each element in the list of string by index
-    #Change each word to upper case and save it into the same position
-
+for i in range(len(sentence)): #Loop through each element in the list of string by index
+    sentence[i] = sentence[i].upper() #Change each word to upper case and save it into the same position
+print(sentence)
 
 
 ##Slide 15 - adding elements by index, without replacing data
