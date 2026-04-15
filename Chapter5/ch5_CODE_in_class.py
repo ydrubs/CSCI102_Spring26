@@ -244,22 +244,45 @@ names = ["Cenard Bennett", "Javier Bustillos", "Antonio Cruz", "Jezter Fernandez
 
 ##Slide 20 - searching and sorting
 ## Building a list from conditions in another list (keep numbers greater than 15 in a new list)
+# from random import randint
+#
+# lst = []
+# for i in range(20):
+#     lst.append(randint(1,20))
+# print(lst)
 
-
-
+# lst2 = [] # Only numbers greater than 15 from first list go here
+# for number in lst:
+#     if number > 15:
+#         lst2.append(number)
+#
+# print(lst2)
 
 
 
 
 ## Slide 21
 ##Given a list of 20 random integers between 1 and 20, create a new list of all integers that appear more than once.
+# from random import randint
+# lst = []
+# for i in range(20):
+#     lst.append(randint(1,20))
+# print(lst)
 
+# delete_me = [1,1, 2, 'hi', 'hi']
+# print(delete_me.count('hi'))
 
-
+# lst2 = []
+# for number in lst:
+#     if lst.count(number) > 1:
+#         if number not in lst2:
+#             lst2.append(number)
+# print(lst2)
 
 
 
 ##Given TWO lists of random numbers between 1 and 20 create a new list that has the common elements of both lists
+# from random import randint
 # lst = []
 # for i in range(20):
 #     lst.append(randint(1,20))
@@ -270,33 +293,42 @@ names = ["Cenard Bennett", "Javier Bustillos", "Antonio Cruz", "Jezter Fernandez
 # for i in range(20):
 #     lst2.append(randint(1,20))
 #
-# print(lst)
 # print(lst2)
+#
+# common_lst = []
+# for number in lst:
+#     if number in lst2: # Check if that number is also in the second list
+#         common_lst.append(number)
+# print(common_lst)
 
-
+# --- SKIP THIS PART
 pass # prevents double counting the same element (unless the same element appears multiple times on both lists)
 
 
 
 
-##Slide 22 - Sorting a list - NOTICE how sort() vs. sorted() behave HERE
-# lst = [4,10,2,1,7]
+#Slide 22 - Sorting a list - NOTICE how sort() vs. sorted() behave HERE
+lst = [4,10,2,1,7]
 
 # Using Sort()
-
-
-
-# letters = ['c', 'h', 'b', 'A', 'M', 'B']
-
+# lst.sort()
+# print(lst)
+#
+# lst.sort(reverse=True)
+# print(lst)
+#
+# letters = ['cat', 'caa', 'h', 'b', 'A', 'M', 'B', 'a']
+# letters.sort()
+# print(letters)
 
 
 # --- Using Sorted()
-# lst2 = [4,10,2,1,7]
+lst2 = [4,10,2,1,7]
 
-pass # This returns the list sorted in numeric order
-pass # Notice that this returns the original list - not the sorted one
+new_lst2 = sorted(lst2) # This returns the list sorted in numeric order
+print(lst2) # Notice that this returns the original list - not the sorted one
 
-pass # This gives us the correct sorted list
+print(new_lst2) # This gives us the correct sorted list
 
 
 

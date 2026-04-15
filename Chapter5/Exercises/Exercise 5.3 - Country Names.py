@@ -3,7 +3,7 @@ Exercise 5.3 Country Names
 
 Given a list of countries as a list:
 
-	1) Generate and print a new list that contains only the countries whose name has two or more words.
+	1) Generate a new list that contains only the countries whose name has two or more words.
 	For example, United States, would be an element in the new list.
 
 	2) Generate a second list that only includes countries that start with the letter 'N'
@@ -46,3 +46,4 @@ countries = ['United States', 'Russia', 'Canada', 'China', 'Mexico', 'Brazil', '
              'Samoa', 'Cape Verde', 'Burundi', 'Equatorial Guinea', 'East Timor', 'Antigua and Barbuda',
              'Solomon Islands', 'Saint Kitts and Nevis', 'Saint Lucia', 'Guinea-Bissau', 'Vanuatu', 'Marshall Islands',
              'Tuvalu', 'Grenada', 'Kiribati', 'Saint Vincent and the Grenadines', 'Palau', 'Comoros', 'Nauru', 'São Tomé and Príncipe']
+
