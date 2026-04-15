@@ -155,10 +155,10 @@ names = ["Cenard Bennett", "Javier Bustillos", "Antonio Cruz", "Jezter Fernandez
 
 
 ##Slide 14 - Manipulating through looping
-numbers = [2,3,4,5]
-for i in range(len(numbers)): # Looping using the index of the list
-    numbers[i] = numbers[i] ** 2
-print(numbers)
+# numbers = [2,3,4,5]
+# for i in range(len(numbers)): # Looping using the index of the list
+#     numbers[i] = numbers[i] ** 2
+# print(numbers)
 
 
 # Looping using the elements of the list to build a new list
@@ -169,42 +169,78 @@ print(numbers)
 
 
 ## Loop in order to manipulate each string element
-sentence = "Python is a good beginner programming language"
-sentence = sentence.split() # Split into individual words and make a list
-print(sentence)
-print(len(sentence))
-
-for i in range(len(sentence)): #Loop through each element in the list of string by index
-    sentence[i] = sentence[i].upper() #Change each word to upper case and save it into the same position
-print(sentence)
-
-
-##Slide 15 - adding elements by index, without replacing data
+# sentence = "Python is a good beginner programming language"
+# sentence = sentence.split() # Split into individual words and make a list
+# print(sentence)
+# print(len(sentence))
+#
+# for i in range(len(sentence)): #Loop through each element in the list of string by index
+#     sentence[i] = sentence[i].upper() #Change each word to upper case and save it into the same position
+# print(sentence)
 
 
+## Slide 15 - adding elements by index, without replacing data
+# print(names)
+# print(names[0])
+# names[0] = "Bob"
+# print(names)
 
+# names.insert(1, "Spongebob")
+# print(names)
 
+# new_students = ["Larry", "Curly", "Moe"]
+# names.extend(new_students)
+# print(names)
+#
+# more_ppl = ['A', 'B', 'C']
+# names = names + more_ppl
+# print(names)
 
 ##Slide 16 - removing elements
-
-
-
+# names.pop()
+# print(names)
+#
+# item = names.pop()
+# print(names)
+# print(item)
+#
+# another_item = names.pop(1)
+# print(names)
+# print(another_item)
 
 
 ## Remove an element using its name by first finding its position (index)
-# some_person = csci102_Roster.index("Stephen")
+# some_person = names.index("Javier Bustillos")
 # print(some_person)
 
 
 # --- To prevent an index error if the element is not found, we can write a conditional:
-
+# person = "Javier Bustillos"
+# if person in names:
+#     person_index = names.index(person)
+#     print(person_index)
+# else:
+#     print(f"{person} is not in the list")
 
 
 
 ## Slide 18 practice exercise - IN CLASS
-
-
-
+# from random import randint
+# print(randint(0,1))
+#
+#
+# lst = []
+# for i in range(10):
+#     lst.append(randint(0,1))
+# print(lst)
+#
+# lst2 = []
+# for i in range(len(lst)):
+#     if lst[i] == 1:
+#         lst2.append("valid")
+#     else:
+#         lst2.append(lst[i])
+# print(lst2)
 
 ##Slide 20 - searching and sorting
 ## Building a list from conditions in another list (keep numbers greater than 15 in a new list)
@@ -216,7 +252,7 @@ print(sentence)
 
 
 ## Slide 21
-##Given a list of 20 random integers between 1 and 20, create a new list of all integers that appear more then once.
+##Given a list of 20 random integers between 1 and 20, create a new list of all integers that appear more than once.
 
 
 
