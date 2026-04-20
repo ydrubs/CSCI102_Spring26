@@ -325,50 +325,63 @@ lst = [4,10,2,1,7]
 # --- Using Sorted()
 lst2 = [4,10,2,1,7]
 
-new_lst2 = sorted(lst2) # This returns the list sorted in numeric order
-print(lst2) # Notice that this returns the original list - not the sorted one
-
-print(new_lst2) # This gives us the correct sorted list
+# new_lst2 = sorted(lst2) # This returns the list sorted in numeric order
+# print(lst2) # Notice that this returns the original list - not the sorted one
+#
+# print(new_lst2) # This gives us the correct sorted list
 
 
 
 ##Slide 24 - Intro to Tuples
-pass #Empty tuple container
+# cards = () #Empty tuple container
+# print(type(cards))
+#
+# cards = (2,3,4,5,'Jack') #Tuples of card ranks
+# card_full_tuple = ((2, 'hearts'), ('Ace', 'Spades'))#Tuple of tuples
+# card_full_list = ([2, 'hearts'], ['Ace', 'Spades']) #Tuple of lists
 
-#Tuples of card ranks
-#Tuple of tuples
-#Tuple of lists
 
-
-# Get element info from a tiple (similar to lists and string)
+# Get element info from a tuple (similar to lists and string)
+# print(cards[0]) # Prints 2
+# print(card_full_tuple[0][1]) # Prints Hearts
 
 
 
 # --- Demonstrates you can't modify a tuple like you can a list, unless you run the line above
-pass
-
-pass # If we change the cards tuple to a list we can manipulate elements
-
-
-# Since the third element [2] in the first tuple is a list, it can be modified. We are not modifying the tuple itself
-
+# cards[0] = 'Ace'
+# card_full_list[0][1] = 'Diamonds'
+# print(card_full_list)
 
 
 ##SLide 26
 ### Application: Building a deck of cards by combining tuples
-import random
-
+# import random
+#
 # suit_tuple = ('hearts', 'diamomds', 'spades', 'clubs')
 # rank_tuple = ('2', '3', '4', '5', '6', '7', '8','9', '10', 'jack', 'queen', 'king', 'ace')
-
+#
 # deck = []
-
-        #Temporary variable to store the current card in loop
-        # Show the card for debugging
-        # Add this card to the deck list
-
-
-
+# for suit in suit_tuple:
+#     for rank in rank_tuple:
+#
+#         card = (rank, suit)#Temporary variable to store the current card in loop
+#         print(card)# Show the card for debugging
+#         deck.append(card) # Add this card to the deck list
+# print(deck)
+#
+# random.shuffle(deck)
+# print(deck)
+#
+# draw_card = random.choice(deck)
+# print(draw_card)
+#
+# card_index = deck.index(draw_card)
+# print(card_index)
+#
+# deck.pop(card_index) # remove the card you drew from the deck
+#
+# first_card = deck[0]
+# print(first_card)
 
 ##Slide 27 (IN_CLASS_TUPLE PRACTICE - point slope form)
 """
@@ -376,68 +389,113 @@ Given two ordered pairs as tuples, write a script that:
     1) unpacks them into individual variables such as x1, x2, y1, and y2
     2) Calculates the slope of the line containing those points
 """
-p1 = (2,6)
-p2 = (9,1)
-
-
-
+# p1 = (2,6)
+# p2 = (9,1)
+#
+# x1 = p1[0]
+# y1 = p1[1]
+#
+# x2 = p2[0]
+# y2 = p2[1]
+#
+# slope = (y2-y1)/(x2-x1)
+# print(slope)
+# print(round(slope,2))
+# print(f"{x2-x1}/{y2-y1}")
+#
 
 ##Slide 29
-##Defining a simple function
+# #Defining a simple function
+# def greeting():
+#     print("Hi Everyone")
+
+# greeting() # Need parenthesis to trigger the function
 
 
-
-# Need parenthesis to trigger the function
+# def greeting():
+#     print("I am a function")
+#     return "Hi Everyone"
+#
+# result = greeting() # Call greeting() and store the output as a variable
+# print(result)
 
 
 
 ##Slide 31
 ##Pass arguments into a function (no limit on amount or data type)
 # first name and last name are considered POSITIONAL arguments
-
+# def greeting(name):
+#     name = name + ' Dole'
+#     return f'Hi {name}'
 
 # Pass the corresponding parameters into the function
+# result = greeting("Bob")
+# print(result)
 
+# greeting()# If you call a function that expects parameters but does not get them, you get an ERROR
 
-# If you call a function that expects parameters but does not get them, you get an ERROR
-
-
-
-
+# def greeting(first_name, last_name):
+#     return f'Call me {last_name}, {first_name}, {last_name}'
+#
+# result = greeting('James', 'Bond') # POSITIONAL PARAMETERS
+# print(result)
 
 ##Slide 32
 ##Pass default values into a function (order of keyword parameters vs. positional parameters matters!)
 ## positional parameters need to be defines FIRST!
-
-# These are KEYWORD Parameters
+# def greeting(first_name = 'James', last_name = 'Bond'): # These are KEYWORD Parameters
+#     return f'Call me {last_name}, {first_name}, {last_name}'
 
 
 # Returns the default parameters
-
+# result = greeting()
+# print(result)
 
 # Returns name as "James" instead of 'John'
+# result = greeting("Bob")
+# print(result)
 
+# result2 = greeting(first_name='Steve')
+# print(result2)
 
 # Returns a last name of "James" instead of "Doe"
-
-
-# Without a parameter name they take the value based on the order (position) they are declared
-
-
+# result3 = greeting(last_name='Doe')
+# print(result3)
 
 
 ## Using BOTH POSITIONAL and KEYWORD
-
-
-
+# def greeting(location, first_name = 'James', last_name = 'Bond'): # These are KEYWORD Parameters
+#     location = "Great" + location
+#     return f'Call me {last_name}, {first_name}, {last_name}'
+#
+# result4 = greeting("Britain", last_name='Doe')
+# print(result4)
 
 # ERROR because POSITIONAL comes before KEYWORD
+# def greeting(first_name = 'James', last_name = 'Bond', location): # These are KEYWORD Parameters
+#     location = "Great" + location
+#     return f'Call me {last_name}, {first_name}, {last_name}'
 
-
+# def addition(a,b):
+#     return a+b
+#
+# n = addition(3,4)
+# print(n)
+#
+# n2 = addition('Whats', ' up')
+# print(n2)
 
 ##Try it:
-"""Write a function called find_bigger that accepts two decimal number and returns the bigger of the two"""
+"""Write a function called find_bigger that accepts two decimal numbers 
+   and returns the bigger of the two"""
+def find_bigger(n1, n2):
+    if n1 > n2:
+        return n1 # Function EXITS as SOON as it sees a valid return
 
+    return n2 # Only works if the above return does not trigger
+
+compare = find_bigger(4.1, 3.6)
+print(compare)
 
 
 
