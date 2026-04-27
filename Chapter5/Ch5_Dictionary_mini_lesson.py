@@ -19,14 +19,24 @@ pass
 pass # Create a dictionary entry from user input
 
 
-#Dictionary are NOT ORDERED meaning we CAN'T use their INDEX to access them or manipulate them
+# --- Dictionary are NOT ORDERED meaning we CAN'T use their INDEX to access them or manipulate them
 pass #This gives an Error because we can't use indexes
 pass # This ALSO gives an error
 pass # This is okay because we reference a key
 
 
-#Create a dictionary using a loop
+# --- Create a dictionary using a loop
 pass
+
+# --- Loop through only keys:
+pass
+
+# --- Loop through both keys and values:
+# key_lst = []
+# value_lst = []
+
+pass
+
 
 
 # Dictionaries KEYS have to be UNIQUE, otherwise, the LAST entry will overwrite the previous similar one
@@ -50,6 +60,8 @@ pass # Error because can't add strings
 3) Write a for loop that converts the city in each dictionary all capital letters and print the dictionary
 """
 pass
+
+
 
 """ 4)	Explain - Why does the following cause an error: 
 
