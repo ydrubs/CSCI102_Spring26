@@ -488,37 +488,78 @@ Given two ordered pairs as tuples, write a script that:
 ##Try it:
 """Write a function called find_bigger that accepts two decimal numbers 
    and returns the bigger of the two"""
-def find_bigger(n1, n2):
-    if n1 > n2:
-        return n1 # Function EXITS as SOON as it sees a valid return
-
-    return n2 # Only works if the above return does not trigger
-
-compare = find_bigger(4.1, 3.6)
-print(compare)
-
-
+# def find_bigger(n1, n2):
+#     if n1 > n2:
+#         return n1 # Function EXITS as SOON as it sees a valid return
+#
+#     return n2 # Only works if the above return does not trigger
+#
+# compare = find_bigger(4.1, 3.6)
+# print(compare)
+#
+#
 
 
 ##Slide 33
 """Write a function named only_ints that takes two parameters.
 Your function should return True if both parameters are integers, and False otherwise."""
 # Returns True only is a string is a valid integer
+a = '3'
+# print(a.isnumeric())
 
-
+# def only_ints(n1, n2):
+#     if str(n1).isnumeric() and str(n2).isnumeric():
+#         return True
+#     return False
+#
+# result = only_ints(1, 1.23)
+# print(result)
 
 
 # ##Slide 34
 ## Write a function that removes digits from a string and returns it back with only alphabetic characters.
+#
+# print('1.23'.isnumeric())
+# print('1.23'.isdigit())
 
+# def remove_digits(data):
+#     new_word = ""
+#     for c in data:
+#         if not c.isnumeric():
+#             new_word += c
+#
+#     return new_word
+#
+#
+# message = input("Please enter a message: ")
+# result = remove_digits(message)
+# print(result)
 
 
 
 
 ##Slide 35
 ##Write a function that accepts an integer and returns the sum of its digits
+number = 123
+# print(number[0]) # ERROR
+# number = str(number)
+# print(number[0])
+#
+# number = list(number)
+# print(number)
 
+def sum_digits(n):
+    n = list(str(n))
+    total = 0
+    print(n)
+    for digit in n:
+        total +=int(digit)
+        # print(digit)
 
+    return total
+
+result = sum_digits(999)
+print(result)
 
 
 
